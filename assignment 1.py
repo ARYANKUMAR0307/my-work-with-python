@@ -90,12 +90,13 @@ Do that in one line code.
 
 
 list=['RED','GREEN','WHITE','BLACK','PINK','YELLOW']
+list.pop(3)
+print("Updated list is ",list)
+list=['RED','GREEN','WHITE','BLACK','PINK','YELLOW']
 list[4] = "PURPLE"
-print(list)
-list[0]='BLUE'
-print(list)
-list[2:3] = "purple"
-print(list)
+list[3] = "PURPLE"
+print("Updated list is ",list)
+
 
 
 
