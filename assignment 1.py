@@ -53,7 +53,7 @@ c=str(input("Enter your gender as F,M,U:"))
 d=str(input("Enter your course name:"))
 e=float(input("Enter you CGPA:"))
 l=[a,b,c,d,e]
-print(l)
+print("List is",l)
 
 
       
@@ -89,14 +89,15 @@ Do that in one line code.
 """
 
 
+
 list=['RED','GREEN','WHITE','BLACK','PINK','YELLOW']
+print("List is ",list)
 list.pop(3)
-print("Updated list is ",list)
+print("Updated list 1 is ",list)
 list=['RED','GREEN','WHITE','BLACK','PINK','YELLOW']
 list[4] = "PURPLE"
 list[3] = "PURPLE"
-print("Updated list is ",list)
-
+print("Updated list 2 is ",list)
 
 
 
