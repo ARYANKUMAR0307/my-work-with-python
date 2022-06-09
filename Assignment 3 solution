@@ -1,0 +1,65 @@
+#QUESTION1
+Enter your number56
+binary code is : [1, 1, 1, 0, 0, 0]
+111000Press any key to continue . . .
+
+
+#QUESTION2
+Select operation.
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+Enter choice(1/2/3/4): 3
+Enter first number: 69
+Enter second number: 99
+69.0 * 99.0 = 6831.0
+Let's do next calculation? (yes/no): no
+Press any key to continue . . .
+
+
+
+#QUESTION3
+import math
+
+#Question3A
+ print((3+4)*5)
+#Question3B
+ print((n*(n-1)/2))
+#Question3C
+ print(4*3.14*r*r)
+#Question3D
+ print(math.sqrt((r*(math.cos(a)))**2+math.sqrt((r*(math.cos(b)))**2))
+#Question3E
+
+
+#QUESTION4
+0
+1
+2
+3
+4
+3
+4
+5
+6
+7
+8
+9
+4
+7
+10
+15
+13
+11
+9
+7
+Press any key to continue . . .
+
+
+#QUESTION5
+Enter number of hydrogen2
+Enter number of carbon1
+Enter number of oxygen2
+Molecular weight of carbohydtate is: 46.02538
+Press any key to continue .
