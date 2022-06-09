@@ -84,6 +84,7 @@ while True:
 #Question3D
  print(math.sqrt((r*(math.cos(a)))**2+math.sqrt((r*(math.cos(b)))**2))
 #Question3E
+ print((y2-y1)/(x2-x1))
 
 
 
