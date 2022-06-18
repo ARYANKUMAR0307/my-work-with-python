@@ -1,7 +1,7 @@
 #Output_Question_1
 
-Enter the string to be reversedAHALAWT
-TWALAHA
+Enter the string to be reversedAHALAWAT
+TAWALAHA
 
 
 #Output_Question_2
