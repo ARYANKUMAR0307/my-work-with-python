@@ -95,23 +95,12 @@ print("\t Question 6")
 
 # Count number of bits to be flipped
 # to convert a into b
- 
-# Function that count set bits
-def countSetBits( n ):
-    count = 0
-    while n:
-        count += 1
-        n &= (n-1)
-    return count
-     
-# Function that return count of
-# flipped number
-def FlippedCount(a , b):
- 
-    # Return count of set bits in
-    # a XOR b
-    return countSetBits(a^b)
- 
-a = int(input('Enter a number'))
-b =  int(input('Enter another number'))
-print(FlippedCount(a, b))
+
+a=int(input("Enter the 1st number: ")
+b=int(input("Enter the 2nd number: ")
+c=a^b
+d=0
+while(c!=0):
+    c=c&(c-1)
+    d+=1
+print("Number poof bits to be flipped: ",d)
