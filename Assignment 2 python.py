@@ -103,4 +103,4 @@ d=0
 while(c!=0):
     c=c&(c-1)
     d+=1
-print("Number poof bits to be flipped: ",d)
+print("Number of bits to be flipped: ",d)
