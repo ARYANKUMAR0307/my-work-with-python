@@ -1,0 +1,144 @@
+# QUESTION-1
+# GST CALCULATOR
+
+from tkinter import *
+
+def find_gst(): # function to calculate GST rate
+    org_cost=int(cost_val.get()) # getting input of original cost and net price
+    net_price=int(price_val.get())
+    rate=(net_price-org_cost)*100/org_cost
+    rate_val.insert(10, str(rate) + "%") # inserting GST rate in answer value
+
+gui=Tk()
+gui.title("GST Calculator")
+gui.geometry("250x150")
+
+cost=Label(gui, text="Original Cost: ") # variable for original cost
+cost.grid(row=1, column=1)
+price=Label(gui, text="Net Price: ") # variable for net price
+price.grid(row=2, column=1)
+rate=Label(gui, text="GST Rate: ") # variable for GST rate
+rate.grid(row=4, column=1)
+
+find=Button(gui, text="Find GST", command=find_gst) # button to find GST rate
+find.grid(row=3, column=2)
+
+cost_val=Entry(gui) # value for original cost
+cost_val.grid(row=1, column=2)
+price_val=Entry(gui) # value of net price
+price_val.grid(row=2, column=2)
+rate_val=Entry(gui) # value of GST rate
+rate_val.grid(row=4, column=2)
+
+gui.mainloop()
+
+
+
+# QUESTION-2
+# CALENDAR
+
+from tkinter import *
+import calendar
+
+def show_cal(): # function to display calendar
+    cal=Tk()
+    cal.title("CALENDAR")
+    cal.geometry("500x600")
+
+    fetch_year=int(year_val.get()) # gets input of year
+    cal_content=calendar.calendar(fetch_year) # fetches calendar of input year
+    cal_year=Label(cal, text=cal_content)
+    cal_year.grid(row=5, column=1)
+
+    cal.mainloop()
+
+
+cal_year=Tk()
+cal_year.title("Calendar")
+cal_year.geometry("250x150")
+
+year=Label(cal_year, text="Enter Year: ")
+year.grid(row=1, column=1)
+year_val=Entry(cal_year) # takes input of year from user
+year_val.grid(row=2, column=1)
+
+show=Button(cal_year, text="Show Calendar", command=show_cal) # button to show year
+show.grid(row=3, column=1)
+
+cal_year.mainloop()
+
+
+
+# QUESTION-3
+# CALCULATOR
+
+from tkinter import *
+
+expression = ""
+def press(num):
+	global expression
+	expression = expression + str(num)
+	equation.set(expression)
+
+def equalpress():
+	try:
+
+		global expression
+		total = str(eval(expression))
+		equation.set(total)
+		expression = ""
+	except:
+		equation.set(" error ")
+		expression = ""
+
+def clear():
+	global expression
+	expression = ""
+	equation.set("")
+
+
+my_calculator = Tk()
+
+my_calculator.title("Calculator")
+my_calculator.geometry("270x150")
+
+equation = StringVar()
+expression_field = Entry(my_calculator, textvariable=equation) # takes input of operation
+expression_field.grid(columnspan=4, ipadx=70)
+
+# buttons and their commands
+button1 = Button(my_calculator, text=' 1 ', command=lambda: press(1), height=1, width=7)
+button1.grid(row=2, column=0)
+
+button2 = Button(my_calculator, text=' 2 ', command=lambda: press(2), height=1, width=7)
+button2.grid(row=2, column=1)
+
+button3 = Button(my_calculator, text=' 3 ', command=lambda: press(3), height=1, width=7)
+button3.grid(row=2, column=2)
+
+button4 = Button(my_calculator, text=' 4 ', command=lambda: press(4), height=1, width=7)
+button4.grid(row=3, column=0)
+
+button5 = Button(my_calculator, text=' 5 ', command=lambda: press(5), height=1, width=7)
+button5.grid(row=3, column=1)
+
+button6 = Button(my_calculator, text=' 6 ', command=lambda: press(6), height=1, width=7)
+button6.grid(row=3, column=2)
+
+button7 = Button(my_calculator, text=' 7 ', command=lambda: press(7), height=1, width=7)
+button7.grid(row=4, column=0)
+
+button8 = Button(my_calculator, text=' 8 ', command=lambda: press(8), height=1, width=7)
+button8.grid(row=4, column=1)
+
+button9 = Button(my_calculator, text=' 9 ', command=lambda: press(9), height=1, width=7)
+button9.grid(row=4, column=2)
+
+button0 = Button(my_calculator, text=' 0 ', command=lambda: press(0), height=1, width=7)
+button0.grid(row=5, column=0)
+
+plus = Button(my_calculator, text=' + ', bg='blue',
+				command=lambda: press("+"), height=1, width=7)
+plus.grid(row=2, column=3)
+
+minus = Button(my_calculat…
